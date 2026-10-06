@@ -11,10 +11,11 @@
 
 ## News and social demo samples
 
-- Files: `news_sample.csv` and `social_sample.csv`
-- These are manually prepared demo examples, not live feeds or a labeled training dataset.
-- They demonstrate that the pipeline can process records tagged as news and social.
-- The labels produced by the current NLP engine are rule-based prototype outputs.
+- `news_sample.csv` contains manually prepared news examples.
+- `social_sample.csv` contains 12 text examples sampled from the validation split of the MIT-licensed Twitter Financial News dataset: four each labeled bearish, bullish, and neutral in the source dataset.
+- The sentiment labels were removed from the demo CSV; RiskPulse analyzes the text itself.
+- These are historical examples for Demo mode, not a live social feed.
+- The original validation file is kept out of the public repository.
 
 ## Synthetic portfolio
 

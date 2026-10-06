@@ -45,9 +45,10 @@ class RiskNlpEngine:
             "gdp", "unemployment", "federal reserve", "fed"
         ),
         "Credit Event": (
-            "default", "bankruptcy", "downgrade", "credit rating",
-            "debt restructuring", "missed payment", "miss payments",
-            "credit loss", "credit losses", "borrower"
+            "default", "bankruptcy", "downgrade", "downgrades",
+            "downgraded", "credit rating", "debt restructuring",
+            "missed payment", "miss payments", "credit loss",
+            "credit losses", "borrower"
         ),
         "Regulatory": (
             "regulation", "regulator", "antitrust", "fine", "lawsuit",
@@ -107,7 +108,6 @@ class RiskNlpEngine:
         sentiment = self._finbert_sentiment(text.strip())
         confidence = self._confidence(event_hits, entity, normalized)
         impact = self._impact(event, normalized)
-
         return RiskSignal(
             source=source,
             text=text.strip(),
@@ -123,6 +123,12 @@ class RiskNlpEngine:
             for alias in aliases:
                 if re.search(rf"\b{re.escape(alias)}\b", text):
                     return entity
+
+        # Recognize cashtags such as $AAN or $UBER as ticker entities.
+        ticker_match = re.search(r"\$([A-Za-z]{1,5})\b", text)
+        if ticker_match:
+            return ticker_match.group(1).upper()
+
         return "Unknown"
 
     def _find_event(self, text: str):
