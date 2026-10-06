@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# Raw datasets: download separately and follow their usage terms
+data/SFinDSet.csv
+data/financial_phrasebank*.txt
+data/twitter_financial_sentiment_valid.csv
+data/sent_valid.csv
+
+# Local model downloads
+models/

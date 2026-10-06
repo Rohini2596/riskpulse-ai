@@ -1,0 +1,79 @@
+Geopolitical:
+  risk_factors:
+    equity_shock: -0.05
+    energy_equity_shock: -0.02
+    government_rate_change_bps: 25
+    corporate_spread_bps: 50
+    loan_spread_bps: 30
+
+Macroeconomic:
+  risk_factors:
+    equity_shock: -0.04
+    energy_equity_shock: -0.03
+    government_rate_change_bps: 75
+    corporate_spread_bps: 40
+    loan_spread_bps: 60
+
+Credit Event:
+  risk_factors:
+    equity_shock: -0.03
+    energy_equity_shock: -0.04
+    government_rate_change_bps: -20
+    corporate_spread_bps: 150
+    loan_spread_bps: 200
+
+Regulatory:
+  risk_factors:
+    equity_shock: -0.025
+    energy_equity_shock: -0.02
+    government_rate_change_bps: 0
+    corporate_spread_bps: 35
+    loan_spread_bps: 25
+
+M&A:
+  risk_factors:
+    equity_shock: -0.01
+    energy_equity_shock: -0.01
+    government_rate_change_bps: 0
+    corporate_spread_bps: 20
+    loan_spread_bps: 10
+
+Earnings:
+  risk_factors:
+    equity_shock: -0.035
+    energy_equity_shock: -0.035
+    government_rate_change_bps: 0
+    corporate_spread_bps: 25
+    loan_spread_bps: 15
+
+Market Shock:
+  risk_factors:
+    equity_shock: -0.07
+    energy_equity_shock: -0.06
+    government_rate_change_bps: -30
+    corporate_spread_bps: 100
+    loan_spread_bps: 125
+
+Management Change:
+  risk_factors:
+    equity_shock: -0.02
+    energy_equity_shock: -0.02
+    government_rate_change_bps: 0
+    corporate_spread_bps: 15
+    loan_spread_bps: 10
+
+Product Launch:
+  risk_factors:
+    equity_shock: -0.005
+    energy_equity_shock: 0
+    government_rate_change_bps: 0
+    corporate_spread_bps: 0
+    loan_spread_bps: 0
+
+Other:
+  risk_factors:
+    equity_shock: -0.01
+    energy_equity_shock: -0.01
+    government_rate_change_bps: 0
+    corporate_spread_bps: 10
+    loan_spread_bps: 10

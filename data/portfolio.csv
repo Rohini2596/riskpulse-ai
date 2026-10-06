@@ -1,0 +1,7 @@
+asset_id,asset_name,asset_type,sector,market_value_usd,duration_years,spread_duration_years,beta,notional_usd,delta
+EQ001,US Technology Equity,equity,technology,22000000,0,0,1.15,0,0
+EQ002,Energy Equity,energy_equity,energy,10000000,0,0,1.05,0,0
+BD001,Investment Grade Bond,bond,corporate,18000000,4.5,4.0,0,0,0
+LN001,Wholesale Corporate Loan,loan,industrials,24000000,0,3.0,0,0,0
+GB001,US Government Bond,government_bond,sovereign,16000000,6.0,0,0,0,0
+DR001,Equity Index Future,derivative,equity,0,0,0,0,10000000,0.8

@@ -1,0 +1,19 @@
+{
+  "row_count": 1048575,
+  "unique_accounts": 1044443,
+  "date_start": "2020-01-01 00:01",
+  "date_end": "2024-02-18 12:24",
+  "transaction_modes": {
+    "Card Out": 215909,
+    "Transfer Out": 208228,
+    "Transfer In": 208315,
+    "Cash In": 207699,
+    "Cash Out": 208424
+  },
+  "transaction_types": {
+    "NGN to USD": 267515,
+    "USD to NGN": 260105,
+    "NGN to NGN": 260429,
+    "USD to USD": 260526
+  }
+}
